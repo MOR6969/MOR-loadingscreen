@@ -1,0 +1,608 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,700');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+body {
+  width: 1920px;
+  height: 1080px;
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  z-index: 999;
+}
+
+.loadscreen-header {
+  width: 100vw;
+  height: 10vh;
+  position: absolute;
+  top: 5px;
+  left: 500px;
+}
+
+.serverlogo {
+    width: 900px;
+    height: 400px;
+    color: #e7e7e7;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    animation: travel 7s;
+    position: absolute;
+    left: 40vw;
+    top: 12vh;
+    z-index: 1;
+
+}
+
+#logo {
+    width: 800px;
+    height: 300px;
+    background-size: 15%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 1;
+
+}
+
+.tagline {
+  color: #ffffff;
+  font-family: 'Acme', sans-serif;
+  text-align: center;
+  text-decoration: uppercase;
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+  animation: music 3s;
+  margin-top: 0px;
+  position: relative;
+  bottom: 23vh;
+  left: 2vh;
+}
+
+.changelog {
+  color: #007d7d;
+  font-family: 'Acme', sans-serif;
+  text-decoration: uppercase;
+  font-size: 18px;
+  letter-spacing: 2px;
+  line-height: 3.2vh;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 900;
+  position: absolute;
+  top: 4vh;
+  right: 2.75vw;
+  z-index: 2;
+}
+
+.cl-list {
+  color: #ffffff;
+  font-family: 'Acme', sans-serif;
+  text-align: center;
+  text-decoration: uppercase;
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: 2.5vh;
+  text-transform: uppercase;
+  font-weight: 600;
+  position: absolute;
+  top: 9vh;
+  right: 1vw;
+  inline-size: 250px;
+  z-index: 2;
+}
+
+.discord-url1 {
+  color: #007d7d;
+  font-family: 'Acme', sans-serif;
+  text-decoration: uppercase;
+  font-size: 28px;
+  letter-spacing: 2px;
+  line-height: 3.2vh;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 900;
+  position: absolute;
+  bottom: 35vh;
+  right: 1.75vw;
+  z-index: 2;
+}
+
+.discordlogo {
+  width: 50px;
+  height: 50px;
+  color: #ffffff;
+  position: absolute;
+  bottom: 29vh;
+  right: 9.5vw;
+  z-index: 2;
+}
+
+.discord-url2 {
+  color: #ffffff;
+  font-family: 'Acme', sans-serif;
+  text-align: center;
+  text-decoration: uppercase;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+  position: absolute;
+  top: 600px;
+  right: 70px;
+  z-index: 2;
+}
+
+.h1-flicker {
+  color: #ffffff;
+  font-family: 'Acme', sans-serif;
+  text-align: center;
+  text-decoration: uppercase;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+  position: relative;
+  padding-left: 20vw;
+  z-index: 2;
+}
+
+.albumart {
+  width: 100px;
+  height: 100px;
+  color: #ffffff;
+  border: 2px solid;
+  border-color:#ffffff;
+  position: absolute;
+  bottom: 6vh;
+  right: 1.25vw;
+  z-index: 2;
+}
+
+.control-btns {
+  z-index: 2;
+}
+
+.video-bg {
+  width:100vw; /* Matches to the Viewport Width */
+  height:auto;
+  max-width:150% !important;
+  position: absolute;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.video-right {
+  position: absolute;
+  width: 360px;
+  height: 225px;
+  top: 31vh;
+  right: 1vw;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.blink{
+  animation:blinkingText 2.1s infinite;
+}
+
+@keyframes blinkingText{
+  0%{     color: #fff;    }
+  49%{    color: #fff; }
+  60%{    color: transparent; }
+  99%{    color:transparent;  }
+  100%{   color: #fff;    }
+}
+
+@keyframes under {
+    from {
+        opacity: 0.0;
+        transform: translateY(-20px);
+    }
+
+    to { 
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+@keyframes travel {
+    from {
+        opacity: 0.01;
+        transform: translateY(130px);
+    }
+
+    to { 
+        transform: translateY(0px);
+    }
+}
+
+.footerbox {
+  width: 35vw;
+  height: 102vh;
+  background-color:#000000;
+  border-radius: 8px;
+  border: solid 2px;
+  border-color: #007d7d;
+  opacity: 60%;
+  position: absolute;
+  left: 83%;
+  top: -5px;
+  overflow: hidden;
+  z-index: 0;
+  
+}
+
+.pb-container {
+  width: 50vw;
+  height: 3vh;
+  position: absolute;
+  left: 41.5vw;
+  bottom: 3.5vh;
+}
+
+.progressbar {
+    width: 100vw;
+    max-width: 80vw;
+    height: 10px;
+    position: center;
+    background: rgba(255, 255, 255, 0.075);
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border-radius: 50px;
+  
+  }
+  .progressbar:after {
+    content: '';
+    display: block;
+    width: 90%;
+    height: 10px;
+    background: #007d7d;
+    animation: load 20s linear;
+  }
+
+  @-moz-keyframes load {
+    0% {
+      width: 0;
+    }
+    10% {
+      width: 5%;
+    }
+    20% {
+      width: 15%;
+    }
+    30% {
+      width: 25%;
+    }
+    40% {
+      width: 30%;
+    }
+    50% {
+      width: 44%;
+    }
+    60% {
+      width: 50%;
+    }
+    70% {
+      width: 72%;
+    }
+    80% {
+      width: 84%;
+    }
+    90% {
+      width: 92%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  @-webkit-keyframes load {
+    0% {
+      width: 0;
+    }
+    10% {
+      width: 5%;
+    }
+    20% {
+      width: 15%;
+    }
+    30% {
+      width: 25%;
+    }
+    40% {
+      width: 30%;
+    }
+    50% {
+      width: 44%;
+    }
+    60% {
+      width: 50%;
+    }
+    70% {
+      width: 72%;
+    }
+    80% {
+      width: 84%;
+    }
+    90% {
+      width: 92%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  @-o-keyframes load {
+    0% {
+      width: 0;
+    }
+    10% {
+      width: 5%;
+    }
+    20% {
+      width: 15%;
+    }
+    30% {
+      width: 25%;
+    }
+    40% {
+      width: 30%;
+    }
+    50% {
+      width: 44%;
+    }
+    60% {
+      width: 50%;
+    }
+    70% {
+      width: 72%;
+    }
+    80% {
+      width: 84%;
+    }
+    90% {
+      width: 92%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  @keyframes load {
+    0% {
+      width: 0;
+    }
+    10% {
+      width: 5%;
+    }
+    20% {
+      width: 15%;
+    }
+    30% {
+      width: 25%;
+    }
+    40% {
+      width: 30%;
+    }
+    50% {
+      width: 44%;
+    }
+    60% {
+      width: 50%;
+    }
+    70% {
+      width: 72%;
+    }
+    80% {
+      width: 84%;
+    }
+    90% {
+      width: 92%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  
+  /* Music Player */
+
+.music-container {
+    display: flex;
+    padding: 1px 1px;
+    position: absolute;
+    left: 79%;
+    top: 80%;
+    margin: 100px 0;
+    z-index: 10;
+  }
+  
+  .img-container {
+    position: relative;
+    width: 110px;
+    bottom: 70px;
+  }
+  
+  .img-container::after {
+    content: '';
+    border-radius: 50%;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    transform: translate(-50%, 50%);
+  }
+  
+  .img-container img {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 110px;
+    width: inherit;
+    position: absolute;
+    bottom: 0;
+    left: 180px;
+    animation: rotate 3s linear infinite;
+  
+    animation-play-state: paused;
+  }
+  
+  .music-container.play .img-container img {
+    animation-play-state: running;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  
+  .action-btn {
+    background-color: rgba(0,0,0,0.0);
+    border: 0;
+    color: rgb(124, 124, 124);
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 20px;
+  }
+  
+  .action-btn.action-btn-big {
+    color: rgb(124, 124, 124);
+    font-size: 30px;
+  }
+  
+  .action-btn:focus {
+    outline: 0;
+  }
+  
+  .music-info {
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 15px 15px 0 0;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: calc(100% - 40px);
+    padding: 10px 10px 10px 150px;
+    opacity: 0;
+    transform: translateY(0%);
+    transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+    z-index: 0;
+  }
+  
+  
+    /* .progress-container {
+      background: rgba(0,0,0,0.5);
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 10px 0;
+      height: 4px;
+      width: 100%;
+    }
+    
+    .progress {
+      background-color: rgb(124, 124, 124);
+      border-radius: 5px;
+      height: 100%;
+      width: 0%;
+      transition: width 0.1s linear;
+    } */
+
+  /* .btns {
+    width: 16vmin;
+    color: red;
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    right: 135px;
+    bottom: 10vh;
+    z-index: 2;
+  }
+
+  .btns span {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: yellow;
+    display: flex;
+  } */
+
+
+  .bar {
+    width: calc(6vmin / 3);
+    background: #007d7d;
+    height: 6vmin;
+    margin-left: .95vmin;
+  }
+  .paused {
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+  }
+  
+  @media (max-width: 700px) {
+    p {
+      font-size: 1.5em;
+    }
+  }
+  
+  @media (max-width: 420px) {
+    .bar {
+      width: calc(20vmax / 3);
+    }
+  }
+  
+  .artistwrap {
+    overflow: hidden; /* HIDE SCROLL BAR */
+    width: 280px;
+    height: 100px;
+    position: absolute;
+    right: 1vw;
+    bottom: 6vh;
+    z-index: 1;
+  }
+   
+  .artistmove { display: block; }
+  
+  .artist {
+    flex-shrink: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: 'Acme', sans-serif;
+    text-decoration: uppercase;
+    font-size: 14px;
+    z-index: 2;
+  }
+
+  @keyframes tickerh {
+    0% { transform: translate3d(100%, 0, 0); }
+    100% { transform: translate3d(-400%, 0, 0); }
+  }
+  .artistmove { animation: tickerh linear 20s infinite; }
+  .artistmove:hover { animation-play-state: paused; }
+
+  .background-img {
+    width:100vw; /* Matches to the Viewport Width */
+    height:auto;
+    max-width:100% !important;
+    overflow: hidden;
+    position: absolute;
+    top: 0vh;
+    left: 0vw;
+    z-index: 0;
+  }
